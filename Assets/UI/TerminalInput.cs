@@ -36,6 +36,7 @@ public class TerminalInput : MonoBehaviour {
 	
 	public void EditText() {
 		string input = inputField.text;
+		if(input.Length == 0) { return; }
 		outputText.text += "\n$ " + input;
 		string commandOutput = terminalInterface.ProcessCommand(input);
 		outputText.text += "\n" + commandOutput;
