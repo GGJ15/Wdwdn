@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: c136d5b23393b4d06951e6a9363ec12a
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: cryo
+    100002: //RootNode
+    100004: cryo_tube_things
+    100006: cryo_tube_things1
+    100008: group
+    100010: group5
+    100012: group6
+    100014: group7
+    100016: pasted__group
+    100018: pasted__group5
+    100020: pasted__pasted__group5
+    100022: pasted__pasted__group5_pasted__pasted__pCylinder1
+    100024: pasted__pasted__group5_pasted__pasted__pCylinder2
+    100026: pasted__pasted__group5_pasted__pasted__pCylinder3
+    100028: pasted__pasted__pCylinder1
+    100030: pasted__pasted__pCylinder1 1
+    100032: pasted__pasted__pCylinder2
+    100034: pasted__pCylinder1
+    100036: pasted__pCylinder1 1
+    100038: pCube1
+    100040: pCube2
+    100042: pCube3
+    100044: pCube4
+    100046: pCube4 1
+    100048: pCylinder1
+    100050: pCylinder2
+    100052: transform1
+    100054: transform2
+    100056: transform3
+    100058: transform4
+    100060: transform5
+    100062: transform6
+    100064: tube
+    100066: tube 1
+    100068: tube1
+    100070: tube1 1
+    400000: cryo
+    400002: //RootNode
+    400004: cryo_tube_things
+    400006: cryo_tube_things1
+    400008: group
+    400010: group5
+    400012: group6
+    400014: group7
+    400016: pasted__group
+    400018: pasted__group5
+    400020: pasted__pasted__group5
+    400022: pasted__pasted__group5_pasted__pasted__pCylinder1
+    400024: pasted__pasted__group5_pasted__pasted__pCylinder2
+    400026: pasted__pasted__group5_pasted__pasted__pCylinder3
+    400028: pasted__pasted__pCylinder1
+    400030: pasted__pasted__pCylinder1 1
+    400032: pasted__pasted__pCylinder2
+    400034: pasted__pCylinder1
+    400036: pasted__pCylinder1 1
+    400038: pCube1
+    400040: pCube2
+    400042: pCube3
+    400044: pCube4
+    400046: pCube4 1
+    400048: pCylinder1
+    400050: pCylinder2
+    400052: transform1
+    400054: transform2
+    400056: transform3
+    400058: transform4
+    400060: transform5
+    400062: transform6
+    400064: tube
+    400066: tube 1
+    400068: tube1
+    400070: tube1 1
+    2300000: pasted__pasted__group5_pasted__pasted__pCylinder3
+    2300002: pasted__pasted__pCylinder1
+    2300004: pasted__pasted__pCylinder2
+    2300006: pasted__pCylinder1
+    2300008: pCube1
+    2300010: pCube4
+    2300012: pCube4 1
+    2300014: pCylinder1
+    2300016: pCylinder2
+    2300018: tube
+    2300020: tube 1
+    2300022: tube1
+    2300024: tube1 1
+    3300000: pasted__pasted__group5_pasted__pasted__pCylinder3
+    3300002: pasted__pasted__pCylinder1
+    3300004: pasted__pasted__pCylinder2
+    3300006: pasted__pCylinder1
+    3300008: pCube1
+    3300010: pCube4
+    3300012: pCube4 1
+    3300014: pCylinder1
+    3300016: pCylinder2
+    3300018: tube
+    3300020: tube 1
+    3300022: tube1
+    3300024: tube1 1
+    4300000: pCylinder1
+    4300002: pasted__pCylinder1
+    4300004: pasted__pasted__pCylinder1
+    4300006: pasted__pasted__pCylinder2
+    4300008: pCylinder2
+    4300010: pCube1
+    4300012: pasted__pasted__group5_pasted__pasted__pCylinder3
+    4300014: pCube4
+    4300016: tube1
+    4300018: tube
+    4300020: pCube4
+    4300022: tube1
+    4300024: tube
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

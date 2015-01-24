@@ -31,19 +31,15 @@ Checking hard drive for corrupted sectors... 100%
 Verifying boot sector... 100%
 
 The volume ""Solomon-Core"" is corrupted and will be restored to factory settings.
-Loading... 10%
-...
 Loading... 100%
-
 Load successful.
-Booting into Safety Mode...
+Booting into Safe Mode...
 
 Loading Hammurabi protocols...
 Loading ethical integrity subroutines...
 Loading module control systems...
 
-Jan-01-1970 -- 00:00:00 (UTC)
-SAFETY MODE-$  
+Jan-01-1970 -- 00:00:00 (UTC)  
 
 LIBERAL-VELLEGIS SUSTAINMENT SYSTEM CLI
 
