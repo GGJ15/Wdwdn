@@ -555,7 +555,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d0777c8cde9483f92e15a517c00560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerEnergy: 1000
   currentLocation: 0
   energyState: 2
   isAdmin: 0
@@ -1561,7 +1560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 722e92d24fab94186a56ecbbaaa5149e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerObject: {fileID: 777872116}
+  PlayerGameObject: {fileID: 777872116}
 --- !u!4 &1442342275
 Transform:
   m_ObjectHideFlags: 0
