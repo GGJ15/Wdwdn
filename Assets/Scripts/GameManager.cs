@@ -99,4 +99,9 @@ public class GameManager : MonoBehaviour {
 	}
 
 
+	public void Tick() {
+		Debug.Log ("Tick!");
+		PlayerState.Tick();
+	}
+
 }

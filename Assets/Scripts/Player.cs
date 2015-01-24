@@ -8,6 +8,8 @@ public class Player : MonoBehaviour {
 	public float hitRadius = 1f;
 	public float hitDistace = 0.6f;
 
+
+
 	// Use this for initialization
 	void Start () {
 	
@@ -17,6 +19,23 @@ public class Player : MonoBehaviour {
 	void Update () {
 		if (Input.GetButtonDown("Action")) {
 			PerformAction();
+		}
+	}
+
+	private int framesSinceLastTick = 0;
+
+	void FixedUpdate() {
+		var directionVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+		
+		if (directionVector != Vector3.zero) {
+			var directionLength = directionVector.magnitude;
+			if(directionLength == 1){
+				framesSinceLastTick++;
+				if(framesSinceLastTick > 200){
+					framesSinceLastTick = 0;
+					GameManager.instance.Tick();
+				}
+			}
 		}
 	}
 
@@ -31,6 +50,7 @@ public class Player : MonoBehaviour {
 		if (Physics.SphereCast(ray, radius, out hit, distance, 1 << LayerMask.NameToLayer("Interactables"))) {
 			IInteractable interactable = hit.collider.gameObject.GetComponent(typeof(IInteractable)) as IInteractable;
 			interactable.OnInteract();
+			GameManager.instance.Tick();
 		}
 	}
 
