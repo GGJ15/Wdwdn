@@ -16,13 +16,13 @@ public class TerminalManager : MonoBehaviour {
 	
 	}
 
-	public void Show() {
+	public void Show_() {
 		gameObject.SetActive(true);
-		terminalInput.GetComponent<TerminalInput>().OnShow();
+		terminalInput.GetComponent<TerminalInput>().On_Show();
 	}
 
-	public void Hide() {
+	public void Hide_() {
 		gameObject.SetActive(false);
-		terminalInput.GetComponent<TerminalInput>().OnHide();
+		terminalInput.GetComponent<TerminalInput>().On_Hide();
 	}
 }

@@ -19,18 +19,30 @@ public class TerminalInput : MonoBehaviour {
 		inputField.ActivateInputField();
 	}
 	IEnumerator OnShow_(){
-		yield return new WaitForEndOfFrame();
+		yield return new WaitForFixedUpdate();
+		outputText.text += terminalInterface.OnOpenPromptText();
+	}
+	IEnumerator ForceActivate_(){
+		yield return new WaitForFixedUpdate();
 		EventSystem.current.SetSelectedGameObject(inputField.gameObject);
 		inputField.Select();
 		inputField.ActivateInputField();
 		inputField.OnPointerClick(new PointerEventData(EventSystem.current));
+
+		
 	}
-	public void OnShow () {
+	public void On_Show () {
 
 		StartCoroutine(OnShow_());
+		ForceActivate();
 	}
 
-	public void OnHide () {
+	public void ForceActivate () {
+		
+		StartCoroutine(ForceActivate_());
+	}
+
+	public void On_Hide () {
 		inputField.DeactivateInputField();
 	}
 	

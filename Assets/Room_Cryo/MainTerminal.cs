@@ -5,13 +5,13 @@ public class MainTerminal : MonoBehaviour, ITerminal {
 
 	void Update() {
 		if (Input.GetKeyDown ("escape")) {
-			gameObject.GetComponent<TerminalManager>().Hide();
+			gameObject.GetComponent<TerminalManager>().Hide_();
 			GameManager.instance.EnablePlayerInput();
 		}
 	}
 
 	void OnEnable(){
-		gameObject.GetComponent<TerminalManager>().Show();
+		gameObject.GetComponent<TerminalManager>().Show_();
 		GameManager.instance.DisablePlayerInput();
 	}
 
@@ -38,7 +38,11 @@ Booting into Safe Mode...
 Loading Hammurabi protocols...
 Loading ethical integrity subroutines...
 Loading module control systems...
+";
+	}
 
+	public string OnOpenPromptText(){
+		return @"
 Jan-01-1970 -- 00:00:00 (UTC)  
 
 LIBERAL-VELLEGIS SUSTAINMENT SYSTEM CLI
