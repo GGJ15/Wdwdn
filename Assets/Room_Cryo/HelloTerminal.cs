@@ -5,8 +5,14 @@ public class HelloTerminal : MonoBehaviour, ITerminal {
 
 	void Update() {
 		if (Input.GetKeyDown ("escape")) {
-			gameObject.SetActive(false);
+			gameObject.GetComponent<TerminalManager>().Hide();
+			GameManager.instance.EnablePlayerInput();
 		}
+	}
+
+	void OnEnable(){
+		gameObject.GetComponent<TerminalManager>().Show();
+		GameManager.instance.DisablePlayerInput();
 	}
 
 	public string InitialPromptText() {

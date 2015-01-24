@@ -33,4 +33,16 @@ public class Player : MonoBehaviour {
 			interactable.OnInteract();
 		}
 	}
+
+	public void DisableInput() {
+		((MonoBehaviour)GetComponent("CharacterMotor")).enabled = false;
+		GetComponent<SmoothMouseLook>().enabled = false;
+		MainCamera.GetComponent<SmoothMouseLook>().enabled = false;
+	}
+
+	public void EnableInput() {
+		((MonoBehaviour)GetComponent("CharacterMotor")).enabled = true;
+		GetComponent<SmoothMouseLook>().enabled = true;
+		MainCamera.GetComponent<SmoothMouseLook>().enabled = true;
+	}
 }
