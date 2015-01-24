@@ -125,6 +125,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 25c331e4f62264930896cc647dcc0c57, type: 3}
+      propertyPath: m_Name
+      value: Ship Model
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 25c331e4f62264930896cc647dcc0c57, type: 3}
   m_RootGameObject: {fileID: 260878431}
@@ -143,7 +147,7 @@ GameObject:
   - 95: {fileID: 260878433}
   - 64: {fileID: 260878436}
   m_Layer: 0
-  m_Name: ship layout extrude
+  m_Name: Ship Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
