@@ -38,7 +38,8 @@ public class PlayerStateManager : MonoBehaviour {
 		Barracks,
 		Cafeteria,
 		Bridge,
-		Corridors
+		Corridors,
+		Unknown
 	}
 
 	public enum EnergyState {
