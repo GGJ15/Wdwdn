@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public GameObject PlayerGameObject;
-	private Camera MainCamera;
+	private Transform MainCamera;
 	private Player Player;
 	private PlayerStateManager PlayerState;
 
@@ -50,7 +50,6 @@ public class GameManager : MonoBehaviour {
 		PlayerState = PlayerStateManager.instance;
 		MainCamera = Player.MainCamera;
 	}
-
 
 
 	void FixedUpdate() {
