@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MainTerminal : MonoBehaviour, ITerminal {
 
+	private ITerminal[] interfaces = new ITerminal[]{ new DisplayDirectives() };
+	
 	void Update() {
 		if (Input.GetKeyDown ("escape")) {
 			gameObject.GetComponent<TerminalManager>().Hide_();
@@ -56,6 +58,12 @@ Please enter your query. I will assist you to the fullest extent of the Law.";
 	}
 
 	public string ProcessCommand(string input){
-		return "Hello!";
+		foreach(ITerminal iterm in interfaces){
+			var r = iterm.ProcessCommand(input);
+			if(r!=null){
+				return r;
+			}
+		}
+		return "I do not understand the phrase: '"+input+"'.\nPlease consult the book of the Law, for a list of valid commands.";
 	}
 }
