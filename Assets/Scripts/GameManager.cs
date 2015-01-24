@@ -30,14 +30,65 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	public GameObject PlayerObject;
+
+	private enum CameraEffect {
+		Normal,
+		Dizzy,
+		PassingOut
+	}
+
+	public GameObject PlayerGameObject;
+	private Camera MainCamera;
+	private Player Player;
+	private PlayerStateManager PlayerState;
+
+	private CameraEffect currentCameraEffect = CameraEffect.Normal;
+
+	
+	void Start() {
+		Player = PlayerGameObject.GetComponent<Player>();
+		PlayerState = PlayerStateManager.instance;
+		MainCamera = Player.MainCamera;
+	}
+
+
+
+	void FixedUpdate() {
+		if(PlayerState.energyState == PlayerStateManager.EnergyState.OK && currentCameraEffect != CameraEffect.Normal){
+			ResetCameraEffects();
+		}
+		if (PlayerState.energyState == PlayerStateManager.EnergyState.LOW && currentCameraEffect != CameraEffect.Dizzy) {
+			SetCameraDizzyEffect();
+		}
+		if (PlayerState.energyState == PlayerStateManager.EnergyState.DYING && currentCameraEffect != CameraEffect.PassingOut) {
+			DoCameraPassOutEffect();
+		}
+	}
 
 	public void DisablePlayerInput(){
 		Screen.lockCursor = false;
-		PlayerObject.GetComponent<Player>().DisableInput();
+		Player.DisableInput();
 	}
+
 	public void EnablePlayerInput(){
 		Screen.lockCursor = true;
-		PlayerObject.GetComponent<Player>().EnableInput();
+		Player.EnableInput();
 	}
+
+	public void SetCameraDizzyEffect() {
+		currentCameraEffect = CameraEffect.Dizzy;
+	}
+
+	public void ResetCameraEffects() {
+		currentCameraEffect = CameraEffect.Normal;
+	}
+
+	public void DoCameraPassOutEffect() {
+		currentCameraEffect = CameraEffect.PassingOut;
+	}
+
+	public void TeleportToMedicalBay() {
+	}
+
+
 }

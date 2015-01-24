@@ -528,6 +528,49 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1755765502}
   m_GameObject: {fileID: 469238566}
+--- !u!1 &499170486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 499170488}
+  - 114: {fileID: 499170487}
+  m_Layer: 0
+  m_Name: PlayerStateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &499170487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499170486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d0777c8cde9483f92e15a517c00560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerEnergy: 1000
+  currentLocation: 0
+  energyState: 2
+  isAdmin: 0
+--- !u!4 &499170488
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499170486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1 &609447808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,7 +1427,7 @@ GameObject:
   - 114: {fileID: 1189078716}
   - 114: {fileID: 1189078720}
   m_Layer: 5
-  m_Name: HelloTerminal
+  m_Name: CryoTerminal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1526,7 +1569,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1442342273}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.31634331, y: 1.6652317, z: -1.11854172}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1612,7 +1655,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 170888, guid: 67d3edfd3855549609508454a90c3371, type: 2}
       propertyPath: m_Name
-      value: HelloTerminal
+      value: CryoTerminal
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470866, guid: 67d3edfd3855549609508454a90c3371, type: 2}
+      propertyPath: m_Text
+      value: Ship Terminal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67d3edfd3855549609508454a90c3371, type: 2}
@@ -1662,7 +1709,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Terminal
+  m_Text: Ship Terminal
 --- !u!222 &1902132850
 CanvasRenderer:
   m_ObjectHideFlags: 0
