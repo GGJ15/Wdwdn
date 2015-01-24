@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour {
 
 
 	void FixedUpdate() {
+		Debug.Log(PlayerState.currentLocation);
 		if (PlayerState.energyState == PlayerStateManager.EnergyState.OK && currentCameraEffect != CameraEffect.Normal) {
 			ResetCameraEffects();
 		}
