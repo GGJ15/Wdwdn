@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour {
 
 
 	void FixedUpdate() {
-		if(PlayerState.energyState == PlayerStateManager.EnergyState.OK && currentCameraEffect != CameraEffect.Normal){
+		if (PlayerState.energyState == PlayerStateManager.EnergyState.OK && currentCameraEffect != CameraEffect.Normal) {
 			ResetCameraEffects();
 		}
 		if (PlayerState.energyState == PlayerStateManager.EnergyState.LOW && currentCameraEffect != CameraEffect.Dizzy) {
@@ -76,14 +76,23 @@ public class GameManager : MonoBehaviour {
 
 	public void SetCameraDizzyEffect() {
 		currentCameraEffect = CameraEffect.Dizzy;
+		((MonoBehaviour)MainCamera.GetComponent("Vignetting")).enabled = false;
+		((MonoBehaviour)MainCamera.GetComponent("Blur")).enabled = false;
+		MainCamera.GetComponent<MotionBlur>().enabled = true;
 	}
 
 	public void ResetCameraEffects() {
 		currentCameraEffect = CameraEffect.Normal;
+		((MonoBehaviour)MainCamera.GetComponent("Vignetting")).enabled = false;
+		((MonoBehaviour)MainCamera.GetComponent("Blur")).enabled = false;
+		MainCamera.GetComponent<MotionBlur>().enabled = false;
 	}
 
 	public void DoCameraPassOutEffect() {
 		currentCameraEffect = CameraEffect.PassingOut;
+		((MonoBehaviour)MainCamera.GetComponent("Vignetting")).enabled = true;
+		((MonoBehaviour)MainCamera.GetComponent("Blur")).enabled = true;
+		MainCamera.GetComponent<MotionBlur>().enabled = true;
 	}
 
 	public void TeleportToMedicalBay() {
