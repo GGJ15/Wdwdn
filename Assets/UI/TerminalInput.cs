@@ -18,11 +18,13 @@ public class TerminalInput : MonoBehaviour {
 		inputField.Select();
 		inputField.ActivateInputField();
 	}
-	IEnumerator OnShow_(){
+
+	IEnumerator OnShow_() {
 		yield return new WaitForFixedUpdate();
 		outputText.text += terminalInterface.OnOpenPromptText();
 	}
-	IEnumerator ForceActivate_(){
+
+	IEnumerator ForceActivate_() {
 		yield return new WaitForFixedUpdate();
 		EventSystem.current.SetSelectedGameObject(inputField.gameObject);
 		inputField.Select();
