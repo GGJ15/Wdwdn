@@ -72,7 +72,7 @@ public class PlayerStateManager : MonoBehaviour {
 	public const int MAX_TIME_ELAPSED = 3000;
 	public const int REAL_TIME_COUNTDOWN_IN_SECONDS = 600; // 10 mins
 	public const int REPLENISH_TIME_COST = 500; 
-	public const int STARTING_ENERGY = 25;
+	public const int STARTING_ENERGY = 35;
 	public int playerEnergy = STARTING_ENERGY;
 	public int timeElapsed = 0;
 	public ShipLocations currentLocation = ShipLocations.Cryochamber;
@@ -105,9 +105,9 @@ public class PlayerStateManager : MonoBehaviour {
 
 	private void CheckState() {
         if (energyState != EnergyState.SUPER_CHARGE) {
-            if (playerEnergy < 10 && playerEnergy > 2) {
+            if (playerEnergy < 15 && playerEnergy > 3) {
                 energyState = EnergyState.LOW;
-            } else if (playerEnergy <= 2) {
+            } else if (playerEnergy <= 3) {
                 energyState = EnergyState.DYING;
             } else {
                 energyState = EnergyState.OK;

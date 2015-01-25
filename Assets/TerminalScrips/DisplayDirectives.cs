@@ -26,7 +26,7 @@ The Passenger will be provided the necessary medical treatment, if needs must.
 Directive 5.
 The Passenger's questions will be answered to the best of the Law's ability.";
 	private string[] low_keywords = new string[] {"what","do","now"," i ","we","are","you", "who"};
-	private string[] hot_keywords = new string[] {"directive","law","help"};
+	private string[] hot_keywords = new string[] {"directive","law","help", "hello"};
 	public string ProcessCommand(string input){
 		var low_score = 0;
 		var hot_score = 0;
