@@ -29,6 +29,11 @@ public class Player : MonoBehaviour {
 		
 		if (directionVector != Vector3.zero) {
 			var directionLength = directionVector.magnitude;
+			if (directionLength> 0.5f) {
+				SoundManager.instance.PlayFootSteps();
+			} else {
+				SoundManager.instance.StopPlayingFootSteps();
+			}
 			if(directionLength == 1){
 				framesSinceLastTick++;
 				if(framesSinceLastTick > 200){
@@ -36,6 +41,8 @@ public class Player : MonoBehaviour {
 					GameManager.instance.Tick();
 				}
 			}
+		} else {
+			SoundManager.instance.StopPlayingFootSteps();
 		}
 	}
 

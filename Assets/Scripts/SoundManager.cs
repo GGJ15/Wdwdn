@@ -34,6 +34,8 @@ public class SoundManager : MonoBehaviour {
 	public AudioSource source1;
 	public AudioSource source2;
 
+	public AudioSource footstepSource;
+
 	
 	public PlayerStateManager.ShipLocations lastPlayedBgmForLocation = PlayerStateManager.ShipLocations.Unknown;
 	void FixedUpdate() {
@@ -80,14 +82,22 @@ public class SoundManager : MonoBehaviour {
 			
 			var i = (Time.time - startTime) / duration;
 			
-			a1.volume = (1-i);
-			a2.volume = i;
+			a1.volume = (1-i) * 0.6f;
+			a2.volume = i * 0.6f;
 			
 			yield return null;
 			
 		}
 	}
 	
+	public void PlayFootSteps() {
+		if (!footstepSource.isPlaying) {
+			footstepSource.Play();
+		}
+	}
 
-
+	public void StopPlayingFootSteps(){
+		footstepSource.Stop();
+	}
+	
 }
