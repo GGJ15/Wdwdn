@@ -34,13 +34,13 @@ public class PlayerStateManager : MonoBehaviour {
 	public enum ShipLocations {
 		Cryochamber,
 		Library,
-		Greenhouse,
+		Garden,
 		Medical,
 		Barracks,
 		Cafeteria,
 		Bridge,
 		Corridors,
-        CommsArray,
+        Comms,
         Engines,
 		Unknown
 	}
@@ -53,9 +53,9 @@ public class PlayerStateManager : MonoBehaviour {
         roomsEnabled.Add (ShipLocations.Barracks, true); 
         roomsEnabled.Add (ShipLocations.Bridge, false); 
         roomsEnabled.Add (ShipLocations.Cafeteria, true); 
-        roomsEnabled.Add (ShipLocations.CommsArray, false);
+        roomsEnabled.Add (ShipLocations.Comms, false);
         roomsEnabled.Add (ShipLocations.Cryochamber, true); 
-        roomsEnabled.Add (ShipLocations.Greenhouse, true); 
+        roomsEnabled.Add (ShipLocations.Garden, true); 
         roomsEnabled.Add (ShipLocations.Library, true); 
         roomsEnabled.Add (ShipLocations.Medical, false);
         roomsEnabled.Add (ShipLocations.Engines, false);
@@ -63,10 +63,10 @@ public class PlayerStateManager : MonoBehaviour {
         roomsPower.Add (ShipLocations.Barracks, 5); 
         roomsPower.Add (ShipLocations.Bridge, 30); 
         roomsPower.Add (ShipLocations.Cafeteria, 10); 
-        roomsPower.Add (ShipLocations.CommsArray, 70); 
+        roomsPower.Add (ShipLocations.Comms, 70); 
         roomsPower.Add (ShipLocations.Engines, 200); 
         roomsPower.Add (ShipLocations.Cryochamber, 5); 
-        roomsPower.Add (ShipLocations.Greenhouse, 30); 
+        roomsPower.Add (ShipLocations.Garden, 30); 
         roomsPower.Add (ShipLocations.Library, 20); 
         roomsPower.Add (ShipLocations.Medical, 15); 
 
@@ -84,8 +84,9 @@ public class PlayerStateManager : MonoBehaviour {
     
     public void DisableEnableRoom(ShipLocations location, bool status){
         roomsEnabled[location] = status;
-        if(location == ShipLocations.CommsArray){
+        if(location == ShipLocations.Comms){
             commsOnline = status;
+
         }
     }
 
@@ -97,7 +98,7 @@ public class PlayerStateManager : MonoBehaviour {
     }
 
     public string CheckDisable(ShipLocations location){
-        if (location == ShipLocations.Greenhouse) {
+        if (location == ShipLocations.Garden) {
             if(realTimeElapsedInSeconds<120){
                 realTimeElapsedInSeconds = 120;
             }
@@ -137,6 +138,8 @@ public class PlayerStateManager : MonoBehaviour {
 	public int realTimeElapsedInSeconds = 0;
 	public float timeStarted = 0.0f;
 
+    public bool isGoingToDie = false;
+
 	public void Tick () {
 		timeElapsed++;
 		playerEnergy--;
@@ -166,7 +169,11 @@ public class PlayerStateManager : MonoBehaviour {
             }
 
             if (playerEnergy <= 0) {
-                GameManager.instance.TeleportToMedicalBay ();
+                if(isGoingToDie){
+                    GameManager.instance.PlayDeathScene();
+                }else{
+                    GameManager.instance.TeleportToMedicalBay ();
+                }
             }
         } else {
             playerEnergy = MAX_ENERGY;

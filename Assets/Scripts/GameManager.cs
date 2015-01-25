@@ -115,11 +115,13 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void UnlockBridge(){
+        PlayerState.DisableEnableRoom(PlayerStateManager.ShipLocations.Bridge,true);
 		PlayerState.hasUnlockedBridge = true;
 
 	}
 
 	public void UnlockMedBay(){
+        PlayerState.DisableEnableRoom(PlayerStateManager.ShipLocations.Medical,true);
 		PlayerState.hasUnlockedMedBay = true;
 	}
 
@@ -140,5 +142,13 @@ public class GameManager : MonoBehaviour {
 		blackCover.SetActive(false);
 		Player.EnableInput();
 	}
+
+    public void PlayDeathScene(){
+
+    }
+
+    public void PlayWinScene(){
+
+    }
 
 }

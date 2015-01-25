@@ -31,7 +31,20 @@ public class CLI : ITerminal {
                     PlayerStateManager.instance.isAdmin = true;
                     return "Administrative access granted.";
                 }
-      
+            case "sos":
+                if (!player.commsOnline)
+                    return "Communcations array is not online.";
+                if (player.isAdmin && player.currentLocation == PlayerStateManager.ShipLocations.Bridge && player.commsOnline) {
+                    GameManager.instance.PlayWinScene();
+                    return @"Sending emergency broadcast...
+Sensors indicate that a space faring vessel is within communications range.
+Broadcast sent, awaiting any reply...";
+
+                } else if (!player.isAdmin) {
+                    return ACCESS_DENIED;
+                } else {
+                    return LOCATION_REQUIRED;
+                }
             case "status":
                 switch (args [1]) {
                     case "ship":
@@ -77,7 +90,9 @@ public class CLI : ITerminal {
                             player.DisableEnableRoom (enumLocation, true);
                         } else {
                             return "Not enough power to activate this system!";
+
                         }
+
                         return check + " units of power allocated for " + enumLocation.ToString ();
                     } catch (System.Exception ex) {
                         return "System to activate not recognized: " + args [1];
