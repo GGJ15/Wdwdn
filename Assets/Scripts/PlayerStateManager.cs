@@ -171,6 +171,7 @@ public class PlayerStateManager : MonoBehaviour {
 	}
 
     public void EnergySuperCharge() {
+        ReplenishFullEnergy(true);
         playerEnergy = MAX_ENERGY;
         energyState = EnergyState.SUPER_CHARGE;
     }

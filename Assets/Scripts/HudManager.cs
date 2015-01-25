@@ -7,6 +7,7 @@ public class HudManager : MonoBehaviour
 
 		public Text textToUpdate;
 		public Text countDownText;
+        public Text warningText;
 
 		// Update is called once per frame
 		void FixedUpdate () {
@@ -17,7 +18,12 @@ public class HudManager : MonoBehaviour
 				var minutesString = Mathf.FloorToInt((timeInSeconds / 60)).ToString("00");
 			var secondsString = Mathf.FloorToInt(timeInSeconds % 60).ToString("00");
 
-				countDownText.text =  minutesString + ":" + secondsString;
-			}
-		}
+            countDownText.text = minutesString + ":" + secondsString;
+        }
+        if (PlayerStateManager.instance.energyState == PlayerStateManager.EnergyState.LOW || PlayerStateManager.instance.energyState == PlayerStateManager.EnergyState.DYING) {
+            warningText.gameObject.SetActive (true);
+        } else {
+            warningText.gameObject.SetActive (false);
+        }
+    }
 }

@@ -5,8 +5,8 @@ public class MainTerminal : MonoBehaviour, ITerminal {
 
 	private ITerminal[] interfaces = new ITerminal[]{ new DisplayDirectives(), new CLI() };
 	
-	void Update() {
-		if (Input.GetKeyDown ("escape")) {
+	void FixedUpdate() {
+		if (Input.GetKeyDown ("escape") || PlayerStateManager.instance.playerEnergy <= 0) {
 			gameObject.GetComponent<TerminalManager>().Hide_();
 			GameManager.instance.EnablePlayerInput();
 		}
@@ -58,6 +58,7 @@ Please enter your query. I will assist you to the fullest extent of the Law.";
 	}
 
 	public string ProcessCommand(string input){
+        GameManager.instance.Tick();
 		foreach(ITerminal iterm in interfaces){
 			var r = iterm.ProcessCommand(input);
 			if(r!=null){

@@ -10,6 +10,8 @@ public class Player : MonoBehaviour {
 
 
 
+    private bool disableInput = false;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -17,7 +19,7 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown("Action")) {
+        if (Input.GetButtonDown("Action") && !disableInput) {
 			PerformAction();
 		}
 	}
@@ -62,12 +64,14 @@ public class Player : MonoBehaviour {
 	}
 
 	public void DisableInput() {
+        disableInput = true;
 		((MonoBehaviour)GetComponent("CharacterMotor")).enabled = false;
 		GetComponent<SmoothMouseLook>().enabled = false;
 		MainCamera.GetComponent<SmoothMouseLook>().enabled = false;
 	}
 
 	public void EnableInput() {
+        disableInput = false;
 		((MonoBehaviour)GetComponent("CharacterMotor")).enabled = true;
 		GetComponent<SmoothMouseLook>().enabled = true;
 		MainCamera.GetComponent<SmoothMouseLook>().enabled = true;

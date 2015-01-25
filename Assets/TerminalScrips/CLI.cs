@@ -41,7 +41,7 @@ public class CLI : ITerminal {
                         }
                         return shipOutput;
                     case "sensors":
-                        return "Cosmic background radiation: " + player.timeElapsed / PlayerStateManager.MAX_TIME_ELAPSED + "%";
+                        return "Cosmic background radiation: " + ((player.timeElapsed / PlayerStateManager.MAX_TIME_ELAPSED)*1000);
           
                     case "power":
                         if (player.isAdmin) {

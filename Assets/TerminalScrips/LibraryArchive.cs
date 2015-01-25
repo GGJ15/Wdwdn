@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class LibraryArchive : MonoBehaviour {
 
 	void FixedUpdate() {
-		if (Input.GetKeyDown ("escape")) {
+        if (Input.GetKeyDown ("escape") || PlayerStateManager.instance.playerEnergy <= 0) {
 			gameObject.SetActive(false);
 			GameManager.instance.EnablePlayerInput();
 		}
