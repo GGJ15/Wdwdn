@@ -3,8 +3,48 @@
 --- !u!29 &1
 SceneSettings:
   m_ObjectHideFlags: 0
-  m_PVSData: 
-  m_PVSObjectsArray: []
+  m_PVSData: 120000d619ffb53f101500000000a041000000000000a0c10000a0c1000020c20000a0410000a0410000204220000000c00000000000000001000000d000000028000000700100000000000000000000300500006600000010010000370000000000000000000000000000000000000000000000000000000000000001000000500100000000000000010000010000000100000001000000e0000000f0000000d00500000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000ffff7f7f000000000000000000000000010000000000000000000000000000001845214000000000000000000000000000000000120000000000000000000000c28c2062e2285a956d228b1c59d2848aa5204aa060f308448c992d859469e1040892179085123101b4e44923484bbc00dad24594a9218590003ad28808400000000000000000000000000000ffff0000ffffffff000000000000000000000000000010c1ea127cc00000b0c100001041068a5dc00000b041000010c12065fbbe0000b0c100001041b0bf63bc0000b041000040c0fa534ebe0000b0c100004040f5285c40698bacc1000040c000c063bc433daec16b1b2cc0f5285c40433d8ec17b4e2a4000c063bc433daec110333e40f5285c40433d8ec1f0a012c1a3705dc0e27a8ec116ae27c000dcc7bb00f09b3bceae12c100c063bca1848ec189e527c0f5285c4000000000000040c0999969c0ec518ec10000404000640bbc55dd8ac1000040c0f8534ebe6a578ec100004040f6285c40d2e28ac13690eec080bf63bc71c59cc021ff24c0f4285c40ae1b1d41aba712c1a3705dc00ad7a3a68fc209c100dec7bb000080418ac511c1803f5dc0de7338beb6790e41c00581bd1c7e0f3e289e12c100c063bc7b142e270cb909c1f4285c400000804164962a40b46e5ac00e098fc15bf80f4100dec7bb0000b8b8fab42a40b28b073de0088fc100001041f4285c40000000005159234080bf63bc64419bc0e474ea40f6285c40433d1c416d340641a3705dc0000000003e0a0f4100dec7bb00008041a5310641c0bf63bc0000802776070f41f4285c4000008041e9e385c000f697bc33ed34c1cdaac3bfe4685f40850b5ac0000000c000c063bcf66936c100000040f5285c40000030c1e83f86c0c0bf63bc6cb15dc0ef0dbdbff3285c409d258740a59bc43f80bf63bc4e8335c1d1328840f4285c4060f750c0d4cec53f80bf63bc468e7ac0c2c88740f6285c40ecc68440000000c000bf63bc152c734000000040f6285c40f669864084d9e7c0a3705dc07fb217417e883bc000d6c7bbc8e25441ceda3fc0a3705dc040f915412c25404000dcc7bb4a441d4148e10ec1a3705dc079925141349edfc000e0c7bbc5a08241852210c1a3705dc01f8581417eebd3c000dcc7bbe519ae4193ea0ec180bf63bc35a55141ccb0dfc0f4285c4023aa8241013410c100c063bc5c7d8141760ed4c0f5285c402212ae4100aa2d40f73180c09a551b416866e04000dcc7bb51ff5541cf842d402a5c0fbf57681b41ce53e040f6285c400d1256413efed640f73180c03c3952410c960e4100dcc7bb74388241a4ebd640285c0fbff94b5241c08c0e41f6285c40d341824112e9d840a3705dc0149580417af10f4100dcc7bbb81eaf411e06d94000c063bc1e91804100001041f5285c40c31aaf411aece7c000c063bc3cc51741abad3bc0f8285c4084f55441fdff3fc080bf63bcfb0b1641ffff3f40f6285c4005571d410000e0c0a3705dc0c750ac410000e04000dcc7bbcdccae410000e0c000c063bcf558ac410000e040f5285c40fbd4ae410000000013000000170000002000000005000000180000002300000004000000240000001c0000000b0000000800000014000000160000000100000026000000220000001e000000270000001a0000001d0000000f0000000d00000015000000020000001f0000001100000012000000210000001b0000000e0000000600000003000000190000000c0000000900000010000000070000000a00000025000000e00500000000000000000000000000000000a0c10000a0c1000020c20000a0410000a0410000204226620000c00c0000000e00000e000000c00d000001300f000000a03e1200010050000000e00200000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000ffff0000ff1fff7f06000000080000003500000005000000000000000000000000000000ffffff1fff3fff7f0e0000001600000000000000250000000000000000000000ff7f0000ffff0000ffbfffff240000000e0000000000000000000000000000000000000000000000ffffff3fffbfff3f32000000090000002f000000070000000000000000000000ff3f0000ff7fff3fff5fff7f3b0000000200000009000000120000000000000000000000ff69ff49ffb5ff48ffaeff7f3d0000000800000020000000080000000000000000000000ff3f0000ff5fff5fff7fff7f450000000600000014000000010000000000000000000000ff3fff5fff7fff5fff7fff654b0000000b00000032000000060000000000000000000000ff3fff7fffffff3fff5fff7f560000000700000000000000000000000000000000000000ff3fff7fffbfff5fff7fff5f5d0000000500000014000000010000000000000000000000ff5fff7fff9fff5fff7fff65620000000800000023000000080000000000000000000000ff5fff9fffbfff5fff7fff7f6a0000000900000000000000000000000000000000000000ff3fffbfffffff5fffbfff7f730000000b000000170000000b0000000000000000000000ff3f0000ff7fff7fffbfff7f7e000000010000000f0000000e0000000000000000000000ff69ff49ffb5ff9fffc3ff7b7f0000000a00000026000000080000000000000000000000ff3fff7fffbfff7fff9fff7f89000000090000001c000000090000000000000000000000ff3fff7fffbfff9fffbfff7f920000000c0000002a00000008000000000000000000000000000000ffffffbfffffffff0000000000000000000000a0ff1f0100ffff0000ff7f000000000060ff7f0200ff1f0000ffff0000ffffff9300000000ffff0000ff7f0000ffffff1300000000ff7f0000ff1f0000ffffff33ffff0000ff7f0000ff1f0000ffffff5300000000ff1f0000ffff000000000080ff1f0000ffff0000ff7f000000000060ff7f0200ff3fff1fffff0000000000a0ff3f0300ffff0000ff3f0000000000a0ff3f0400ff7f0000ff7fff3f000000a0ff3f0800ffffff7fff7fff3fffffff1300000000ff7f0000ff3fff1fffffff33ffff0000ff7f0000ff3fff1fffffff5300000000ff3fff1fffff000000000040ff7f0000ff1f0000ffff000000000040ff7f0100ff3fff1fffff000000000040ff7f0400ff5fff3fff5f000000000040ff7f0400ff55ff3fff6bff5f00000040ff7f0600ff7fff5fff4f000000000040ff7f0600ff6cff5fff59ff4f00000040ff7f0800ff54ff3fff9fff9300000040ff7f0800ff5fff3fffffff9f00000040ff7f0b00ff6dff5fffafffa500000040ff7f0b00ff7fff5fffbfffaf00000040ff7f0c00ffbfff5fffffffbf00000040ff7f0d00ffbfff7fff43000000000040ff7f0d00ffbfffb3ff4dff3f00000040ff7f0500ff96ff8dff89ff7500000040ff7f0f00ff9fff7fffbfffb900000040ff7f1000ffb5ff9fffbfffb900000040ff7f1000ffbfffb5ffbfffb3000000a0ffbf1100ffff0000ffffff7fffffff9300000000ffff0000ffffff7fffffff1300000000ffffff7fffbf0000ffffff33ffff0000ffffff7fffbf0000ffffff73ffff0000ffbf0000ffff000000000060ff3f0400ff5fff3fff7f000000000060ff3f0600ff7fff5fff5f000000000060ff3f0700ff7fff5fff7fff5f00000060ff3f0800ff5fff3fffffff7f00000060ff3f0900ff7fff5fffbfff7f00000060ff3f0c00ffbfff5fffffffbf00000080ff3f0100ffff0000ff3f000000000060ff3f0d00ffbfff7fff7f000000000060ff3f0f00ff9fff7fffbfff7f00000060ff3f1000ffbfff9fffbfff7f000000a0ffbf1100ffff0000ff3f0000ffffff1300000000ff3f0000ffbfff3fffffff33ffff0000ff3f0000ffbfff3fffffff5300000000ffbfff3fffff000000000040ff3f0300ff5fff3fff7f0000000000a0ff5f0600ff5f0000ff7fff3f000000a0ff5f0700ff7fff5fff65ff3f00000020ff7f0800ff65ff3fff5fff3f00000020ff7f0800ff7bff69ff46ff3f00000060ff7f0200ff5fff3fff5f000000000060ff7f0200ff55ff3fff6bff5f00000080ff3f0100ff7f0000ff7fff3fffffff1300000000ff7fff3fff5fff3f000000a0ff9f0e00ff7dff71ff79ff6900000060ff7f0200ff96ff8dff89ff7500000040ff3f0300ff7fff5fff5f000000000080ff5f0400ff5f0000ff7fff3f00000020ff5f0700ff65ff3fff7fff5f00000060ff7f0200ff7fff5fff4f000000000060ff7f0200ff6cff5fff59ff4f000000a0ff7f0d00ff430000ff7fff3f000000a0ff7f0d00ff5fff3fff67ff3fffffff1300000000ff7fff3fff7fff5f00000000ff5f0600ff65ff3fff7fff5f00000040ff3f0300ff7fff5fff7fff5f00000080ff5f0400ff7fff5fff65ff3f00000020ff7f0900ff5fff3fff7fff5f00000020ff7f0a00ff65ff5fff7fff5f000000a0ff7f0d00ff7fff5fff65ff3f00000040ff3f0300ff5fff3fffffff7f000000a0ff5f0900ffbfff7fff5fff3f000000a0ff5f0a00ff9fff7fff65ff5f000000a0ff5f0b00ffbfff9fff7fff5f000000a0ff5f0c00ffffffbfff7fff3f00000000ff7f0400ff65ff3fff5fff3f00000000ff7f0400ff7bff69ff46ff3f00000060ff7f0200ff54ff3fff9fff9300000060ff7f0200ff5fff3fffffff9f00000080ff3f0100ffffff7fff7fff3fffffff33ffff0000ff7fff3fff5fff3f00000040ff3f0300ff7fff5fffbfff7f00000080ff5f0800ffbfff7fff5fff3f00000060ff5f0a00ff7fff5fff9fff7f00000020ffbf0c00ff5fff3fff7fff5f00000060ff5f0b00ff7fff5fffbfff9f00000000ff7f0700ff5fff3fff7fff5f000000a0ff7f0f00ffbfff7fff5fff3f00000040ff5f0900ff7fff5fff9fff7f00000080ff5f0800ff9fff7fff65ff5f00000020ff9f0b00ff65ff5fff7fff5f00000000ff7f0700ff65ff5fff7fff5f000000a0ff7f0f00ff9fff7fff65ff5f00000000ff9f0a00ff65ff5fff7fff5f00000040ff5f0900ff7fff5fffbfff9f00000080ff5f0800ffbfff9fff7fff5f00000020ffbf0c00ff7fff5fff7fff5f00000060ff7f0200ff6dff5fffafffa500000060ff7f0200ff7fff5fffbfffaf000000a0ff7f0f00ffbfff9fff65ff5f000000a0ff7f0f00ffbfffb9ff7fff6300000040ff3f0300ffbfff5fffffffbf00000080ff5f0800ffffffbfff7fff3f00000000ffbf0900ff5fff3fff7fff5f00000000ffbf0b00ff7fff5fff7fff5f00000060ff7f0200ffbfff5fffffffbf00000000ffbf0f00ff7fff3fff9fff7f00000000ffbf1000ff7fff3fffbfff9f000000a0ffbf1100ffffffbfff7fff3fffffff33ffff0000ff7fff3fffbfff5f00000040ff3f0300ffbfff7fff7f000000000020ff7f0f00ff65ff3fff9fff7f00000020ff7f1000ff65ff3fffbfff9f00000060ff7f0200ffbfff7fff43000000000060ff7f0200ffbfffb3ff4dff3f000000a0ffbf1100ff5f0000ff7fff3f000000a0ffbf1100ff7fff5fff65ff3f00000080ff7f0600ff430000ff7fff3f00000080ff7f0600ff5fff3fff67ff3f00000080ff7f0700ff7fff5fff65ff3fffffff1300000000ff7fff3fffbfff7f00000080ff9f0500ff7dff71ff79ff6900000040ff3f0300ff9fff7fffbfff7f00000020ffbf0c00ff7fff3fff9fff7f000000a0ff9f1000ff9fff7fff65ff3f000000a0ff9f1000ffbfff9fff7fff3f00000000ff7f0d00ff65ff3fff9fff7f00000060ff7f0200ff9fff7fffbfffb900000080ff7f0900ffbfff7fff5fff3f00000080ff7f0a00ff9fff7fff65ff5f00000080ff7f0b00ffbfff9fff65ff5f00000080ff7f0b00ffbfffb9ff7fff6300000040ff3f0300ffbfff9fffbfff7f00000080ff9f0f00ff9fff7fff65ff3f00000080ff9f0f00ffbfff9fff7fff3f00000020ffbf0c00ff7fff3fffbfff9f00000000ff7f0d00ff65ff3fffbfff9f00000060ff7f0200ffb5ff9fffbfffb900000060ff7f0200ffbfffb5ffbfffb3000000a0ffbf1100ffbfff7fff65ff3f000000a0ffbf1100ffbfffb1ff7fff5f00000080ffbf0300ffff0000ff3f000000000080ffbf0d00ff5f0000ff7fff3f00000080ffbf0d00ff7fff5fff65ff3f00000080ffbf0c00ffffffbfff7fff3f00000080ffbf1000ffbfff7fff65ff3f00000080ffbf1000ffbfffb1ff7fff5f00000080ffbf0200ffff0000ffffff7fffffff1300000000ffff0000ffffffbfffffff33ffff0000ffff0000ffffffbfffffff5300000000ffffffbfffff0000ffffff73ffff0000ffffffbfffff0000ffffffb3ffff0000ffff0000ffff00006a9533f357e9ee4c37c0facc5d77d5fac0ccec6cf7be795655ed2ab63646037400305f2dfdd53b0dbfaaf1cfa8e6a044745d447475f05701c7fb7c15c3c76eb70f0f7f440fcfcc7c44cffccc3ca28fe1cfcfacc8247677f3b2cf8e3feff8ecf8ec8f23facf3273fff38af03cff7c3ff77f6ffb6dfb6dbbefbaefbaff2cf3aefbcff23cfffbfef03fd310d31093f3b2df9edfaefbddddcefbdef1fff33ffff33fff333fffd0d0d0cc0c11d1fc0cd1ffffffff3ffff33fffff3f3f3f3ffffff3f3ffffffff03000000ae002b01880100000b161f29333d4a57636c7483909ca5091018232b353d444d535c60676e75050a161e262d323538434e5455575b000000000000000000a0c10000a041000000000000000000000000000000000000f0c1000000000000000000000000000000000000000000000000000000000000000082204440300cc310450d134584813051442049d33c501411c68144515114451411c651204ab1344553384ff1144e61144bd1144ee33845f13890e34451141105511045611448811448512c4553344dd3384e533c10e4409003458e131544511886511845611448512ccb522c45b1384d51348ee3348dd3388de31405e4149003399003414ee4448e43140561148561144851204b512c4bd11445e33845e1388dd3344e51404e013945e1381004454ee414446114458114c5b22cc552148e531445d1384e5138450139105110054114444118855118466114865118855114485120cbb2144551388d53140e4414446114466114055220c5522c4bb114cb522cc5b2144ee1144ee1144e513845e1148553348e53388553144e51144bb1144be1144ee1148e533805000000000000000000
+  m_PVSObjectsArray:
+  - {fileID: 75667255}
+  - {fileID: 244128513}
+  - {fileID: 314073046}
+  - {fileID: 388866612}
+  - {fileID: 424730955}
+  - {fileID: 495947951}
+  - {fileID: 511374211}
+  - {fileID: 536439629}
+  - {fileID: 663194868}
+  - {fileID: 748607630}
+  - {fileID: 755205962}
+  - {fileID: 755671569}
+  - {fileID: 794350154}
+  - {fileID: 821612224}
+  - {fileID: 826134686}
+  - {fileID: 843909979}
+  - {fileID: 912281368}
+  - {fileID: 1036608451}
+  - {fileID: 1059433338}
+  - {fileID: 1064554926}
+  - {fileID: 1140595775}
+  - {fileID: 1193303922}
+  - {fileID: 1270823671}
+  - {fileID: 1353862446}
+  - {fileID: 1403449159}
+  - {fileID: 1413537718}
+  - {fileID: 1579397771}
+  - {fileID: 1679730248}
+  - {fileID: 1680192499}
+  - {fileID: 1696491090}
+  - {fileID: 1701666007}
+  - {fileID: 1732873502}
+  - {fileID: 1865105893}
+  - {fileID: 1877308797}
+  - {fileID: 1956893206}
+  - {fileID: 1992931389}
+  - {fileID: 2002364566}
+  - {fileID: 2024581442}
+  - {fileID: 2028016048}
+  - {fileID: 2075084765}
   m_PVSPortalsArray: []
   m_OcclusionBakeSettings:
     smallestOccluder: 5
@@ -33,13 +73,37 @@ LevelGameManager:
 LightmapSettings:
   m_ObjectHideFlags: 0
   m_LightProbes: {fileID: 0}
-  m_Lightmaps: []
+  m_Lightmaps:
+  - m_Lightmap: {fileID: 2800000, guid: 782fd9c64b65347cc865ec66891a3cad, type: 3}
+    m_IndirectLightmap: {fileID: 2800000, guid: 760976de6411647c7a28d82305cbee45,
+      type: 3}
+  - m_Lightmap: {fileID: 2800000, guid: e699816333cbf445e8ef8285919c7f1a, type: 3}
+    m_IndirectLightmap: {fileID: 2800000, guid: a64cae57322b04832bd17189f67022ef,
+      type: 3}
+  - m_Lightmap: {fileID: 2800000, guid: a8e77c9868c0a4ffe82dc8a3cf81dc21, type: 3}
+    m_IndirectLightmap: {fileID: 2800000, guid: cea4b2a4e7b97481d9d7408ea90aed1f,
+      type: 3}
+  - m_Lightmap: {fileID: 2800000, guid: a521ea581caf14823b6c0e55b5d589e9, type: 3}
+    m_IndirectLightmap: {fileID: 2800000, guid: 53962759b3e67400b9c43dbb088a4313,
+      type: 3}
+  - m_Lightmap: {fileID: 2800000, guid: 6b0f413f191c44232ae159e097e6ba34, type: 3}
+    m_IndirectLightmap: {fileID: 2800000, guid: 424baba52e106463685f87d4d680f6bd,
+      type: 3}
+  - m_Lightmap: {fileID: 2800000, guid: 482ff14d9f9a644178fee8602cb9d735, type: 3}
+    m_IndirectLightmap: {fileID: 2800000, guid: c66bd77738c07456584705a62d208b45,
+      type: 3}
+  - m_Lightmap: {fileID: 2800000, guid: 0327e38a780f0420d8d9fd0152241c39, type: 3}
+    m_IndirectLightmap: {fileID: 2800000, guid: ae361a6219aa04714a0767b5eaeda73a,
+      type: 3}
+  - m_Lightmap: {fileID: 2800000, guid: 05bcca0e8df47455fa09e737c8c8723c, type: 3}
+    m_IndirectLightmap: {fileID: 2800000, guid: a3a4d1edea15e4f458c4ca3486659bf9,
+      type: 3}
   m_LightmapsMode: 1
   m_BakedColorSpace: 0
   m_UseDualLightmapsInForward: 0
   m_LightmapEditorSettings:
     m_Resolution: 50
-    m_LastUsedResolution: 0
+    m_LastUsedResolution: 50
     m_TextureWidth: 1024
     m_TextureHeight: 1024
     m_BounceBoost: 1
@@ -158,12 +222,12 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Intensity: .330000013
+  m_Range: 13.4099998
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_Strength: 1
     m_Bias: .0500000007
@@ -171,7 +235,7 @@ Light:
     m_SoftnessFade: 1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
+  m_ActuallyLightmapped: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -621,8 +685,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 1
+  m_LightmapTilingOffset: {x: 1, y: 1, z: -.375, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -2322,8 +2386,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 2
+  m_LightmapTilingOffset: {x: .599609375, y: .599609375, z: -.0749511719, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -3000,8 +3064,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 0
+  m_LightmapTilingOffset: {x: .318359375, y: .318359375, z: .710205078, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -3793,8 +3857,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 6
+  m_LightmapTilingOffset: {x: .280273438, y: .280273438, z: -.0350341797, w: .520507812}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -3952,8 +4016,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 1
+  m_LightmapTilingOffset: {x: .3515625, y: .3515625, z: .486328125, w: .6015625}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -4427,8 +4491,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 6
+  m_LightmapTilingOffset: {x: .27734375, y: .27734375, z: .565917969, w: .51171875}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -4754,8 +4818,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 4
+  m_LightmapTilingOffset: {x: .338867188, y: .338867188, z: .379516602, w: .5546875}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -4968,8 +5032,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 5
+  m_LightmapTilingOffset: {x: .3125, y: .3125, z: -.0390625, w: .5546875}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -6239,8 +6303,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 6
+  m_LightmapTilingOffset: {x: .509765625, y: .509765625, z: .326904297, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -6634,7 +6698,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 728531878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0700000003, y: .270000011, z: .349999994}
+  m_LocalPosition: {x: .0700000003, y: 4.26999998, z: 1.08000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1182987313}
@@ -6649,12 +6713,12 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Intensity: .330000013
+  m_Range: 6.92999983
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_Strength: 1
     m_Bias: .0500000007
@@ -6662,7 +6726,7 @@ Light:
     m_SoftnessFade: 1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
+  m_ActuallyLightmapped: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -6748,8 +6812,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 4
+  m_LightmapTilingOffset: {x: .338867188, y: .338867188, z: .635375977, w: .5546875}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -6864,8 +6928,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 7
+  m_LightmapTilingOffset: {x: .505859375, y: .505859375, z: -.0632324219, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -6965,8 +7029,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 3
+  m_LightmapTilingOffset: {x: .560546875, y: .560546875, z: .379150391, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -7636,8 +7700,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 4
+  m_LightmapTilingOffset: {x: .338867188, y: .338867188, z: -.0423583984, w: .5625}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -8010,8 +8074,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 3
+  m_LightmapTilingOffset: {x: .40234375, y: .40234375, z: .398925781, w: .5625}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -8082,8 +8146,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 3
+  m_LightmapTilingOffset: {x: .338867188, y: .338867188, z: -.0423583984, w: .598632812}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -8228,8 +8292,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 1
+  m_LightmapTilingOffset: {x: .37109375, y: .37109375, z: .203613281, w: .6015625}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -8511,7 +8575,7 @@ Light:
   serializedVersion: 3
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: .140000001
+  m_Intensity: .0299999993
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -8524,7 +8588,7 @@ Light:
     m_SoftnessFade: 1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
+  m_ActuallyLightmapped: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -8646,8 +8710,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 0
+  m_LightmapTilingOffset: {x: .318359375, y: .318359375, z: .710205078, w: .3203125}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -9941,12 +10005,12 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Intensity: .330000013
+  m_Range: 13.4099998
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_Strength: 1
     m_Bias: .0500000007
@@ -9954,7 +10018,7 @@ Light:
     m_SoftnessFade: 1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
+  m_ActuallyLightmapped: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -10018,8 +10082,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 1
+  m_LightmapTilingOffset: {x: .259765625, y: .259765625, z: .763427734, w: .6015625}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -10286,6 +10350,76 @@ MeshFilter:
   m_PrefabInternal: {fileID: 41451114}
   m_GameObject: {fileID: 1057468343}
   m_Mesh: {fileID: 4300012, guid: dcdc6f7c689fd4ef5a070b78bb0c749e, type: 3}
+--- !u!1 &1059332143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1059332144}
+  - 33: {fileID: 1059332147}
+  - 64: {fileID: 1059332146}
+  - 23: {fileID: 1059332145}
+  m_Layer: 0
+  m_Name: RoofPlane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1059332144
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1059332143}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: -1.62920685e-07}
+  m_LocalPosition: {x: .00139999995, y: .0401000008, z: .00190000003}
+  m_LocalScale: {x: .0223957151, y: .00999999605, z: .0463975817}
+  m_Children: []
+  m_Father: {fileID: 1172607312}
+  m_RootOrder: 40
+--- !u!23 &1059332145
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1059332143}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!64 &1059332146
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1059332143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &1059332147
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1059332143}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1059421861
 GameObject:
   m_ObjectHideFlags: 0
@@ -10384,8 +10518,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 2
+  m_LightmapTilingOffset: {x: .340820312, y: .340820312, z: .408569336, w: .598632812}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -10456,8 +10590,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 0
+  m_LightmapTilingOffset: {x: 1, y: 1, z: -.125, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -11333,8 +11467,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 4
+  m_LightmapTilingOffset: {x: .560546875, y: .560546875, z: -.0700683594, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -11930,6 +12064,7 @@ Transform:
   - {fileID: 314073045}
   - {fileID: 1036608450}
   - {fileID: 663194867}
+  - {fileID: 1059332144}
   m_Father: {fileID: 1182987313}
   m_RootOrder: 0
 --- !u!95 &1172607313
@@ -12261,8 +12396,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 5
+  m_LightmapTilingOffset: {x: .282226562, y: .282226562, z: .59362793, w: .5234375}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -12634,8 +12769,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 1
+  m_LightmapTilingOffset: {x: .599609375, y: .599609375, z: .175048828, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -13015,8 +13150,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 2
+  m_LightmapTilingOffset: {x: .3515625, y: .3515625, z: -.0439453125, w: .6015625}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -13425,8 +13560,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 2
+  m_LightmapTilingOffset: {x: .596679688, y: .596679688, z: .376586914, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -13541,12 +13676,12 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Intensity: .330000013
+  m_Range: 13.4099998
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_Strength: 1
     m_Bias: .0500000007
@@ -13554,7 +13689,7 @@ Light:
     m_SoftnessFade: 1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
+  m_ActuallyLightmapped: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -13618,8 +13753,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 6
+  m_LightmapTilingOffset: {x: .280273438, y: .280273438, z: .739379883, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -14660,8 +14795,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 5
+  m_LightmapTilingOffset: {x: .282226562, y: .282226562, z: .380737305, w: .5234375}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -15978,8 +16113,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 2
+  m_LightmapTilingOffset: {x: .340820312, y: .340820312, z: .665405273, w: .598632812}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -16050,8 +16185,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 5
+  m_LightmapTilingOffset: {x: .521484375, y: .521484375, z: .350830078, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -16180,8 +16315,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 1
+  m_LightmapTilingOffset: {x: .39453125, y: .39453125, z: .651855469, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -16252,8 +16387,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 5
+  m_LightmapTilingOffset: {x: .552734375, y: .552734375, z: -.0690917969, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -16761,8 +16896,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 3
+  m_LightmapTilingOffset: {x: .3125, y: .3125, z: .713867188, w: .5625}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -17692,8 +17827,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 6
+  m_LightmapTilingOffset: {x: .27734375, y: .27734375, z: .355957031, w: .51171875}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -17950,8 +18085,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 7
+  m_LightmapTilingOffset: {x: .259765625, y: .259765625, z: -.0324707031, w: .5078125}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -18870,8 +19005,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 4
+  m_LightmapTilingOffset: {x: .552734375, y: .552734375, z: .352783203, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -19000,8 +19135,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 3
+  m_LightmapTilingOffset: {x: .596679688, y: .596679688, z: -.0745849609, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -19130,8 +19265,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 0
+  m_LightmapTilingOffset: {x: .31640625, y: .31640625, z: .710449219, w: .640625}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -19348,8 +19483,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 7
+  m_LightmapTilingOffset: {x: .505859375, y: .505859375, z: .317626953, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -19420,8 +19555,8 @@ Renderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapIndex: 6
+  m_LightmapTilingOffset: {x: .518554688, y: .518554688, z: -.0648193359, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 19a31e4a46bf340429d6ae9c2fd37021, type: 2}
   m_SubsetIndices: 
@@ -19550,12 +19685,12 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Intensity: .330000013
+  m_Range: 13.4099998
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_Strength: 1
     m_Bias: .0500000007
@@ -19563,7 +19698,7 @@ Light:
     m_SoftnessFade: 1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
+  m_ActuallyLightmapped: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
