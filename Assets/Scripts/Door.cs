@@ -32,9 +32,5 @@ public class Door : MonoBehaviour {
 		float distCovered = (Time.time - startTime) * speed;
 		float fracJourney = distCovered / journeyLength;
 		gameObject.transform.position = Vector3.Lerp(startMarker.position, endMarker.position, fracJourney);
-		if(fracJourney > 1.0 && !startedSwitch){
-			StartCoroutine(Switch());
-			startedSwitch = true;
-		}
 	}
 }
