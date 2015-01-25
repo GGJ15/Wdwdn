@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MainTerminal : MonoBehaviour, ITerminal {
 
-	private ITerminal[] interfaces = new ITerminal[]{ new DisplayDirectives() };
+	private ITerminal[] interfaces = new ITerminal[]{ new DisplayDirectives(), new CLI() };
 	
 	void Update() {
 		if (Input.GetKeyDown ("escape")) {

@@ -40,25 +40,57 @@ public class PlayerStateManager : MonoBehaviour {
 		Cafeteria,
 		Bridge,
 		Corridors,
+        CommsArray,
+        Engines,
 		Unknown
 	}
 
 
     public Dictionary<ShipLocations,bool> roomsEnabled = new Dictionary<ShipLocations, bool>(7);
+    public Dictionary<ShipLocations,int> roomsPower = new Dictionary<ShipLocations, int>(7);
 
     void Awake() {
-        roomsEnabled.Add (ShipLocations.Barracks, true);
-        roomsEnabled.Add (ShipLocations.Bridge, false);
-        roomsEnabled.Add (ShipLocations.Cafeteria, true);
-        roomsEnabled.Add (ShipLocations.Corridors, true);
-        roomsEnabled.Add (ShipLocations.Cryochamber, true);
-        roomsEnabled.Add (ShipLocations.Greenhouse, true);
-        roomsEnabled.Add (ShipLocations.Library, true);
+        roomsEnabled.Add (ShipLocations.Barracks, true); 
+        roomsEnabled.Add (ShipLocations.Bridge, false); 
+        roomsEnabled.Add (ShipLocations.Cafeteria, true); 
+        roomsEnabled.Add (ShipLocations.CommsArray, false);
+        roomsEnabled.Add (ShipLocations.Cryochamber, true); 
+        roomsEnabled.Add (ShipLocations.Greenhouse, true); 
+        roomsEnabled.Add (ShipLocations.Library, true); 
         roomsEnabled.Add (ShipLocations.Medical, false);
+        roomsEnabled.Add (ShipLocations.Engines, false);
+
+        roomsPower.Add (ShipLocations.Barracks, 5); 
+        roomsPower.Add (ShipLocations.Bridge, 30); 
+        roomsPower.Add (ShipLocations.Cafeteria, 10); 
+        roomsPower.Add (ShipLocations.CommsArray, 70); 
+        roomsPower.Add (ShipLocations.Engines, 200); 
+        roomsPower.Add (ShipLocations.Cryochamber, 5); 
+        roomsPower.Add (ShipLocations.Greenhouse, 30); 
+        roomsPower.Add (ShipLocations.Library, 20); 
+        roomsPower.Add (ShipLocations.Medical, 15); 
+
     }
 
+    public int calculatePowerConsumed(){
+        var power = 0;
+        foreach(KeyValuePair<ShipLocations, int> item in roomsPower){
+            if(roomsEnabled[item.Key]){
+                power += item.Value;
+            }
+        }
+        return power;
+    }
+    
     public void DisableEnableRoom(ShipLocations location, bool status){
         roomsEnabled[location] = status;
+    }
+
+    public int CheckPowerRequirements (ShipLocations location) {
+        if ((roomsPower [location] + calculatePowerConsumed ()) > MAX_SHIP_POWER) {
+            return -1;
+        }
+        return roomsPower [location];
     }
 
 	public enum EnergyState {
@@ -73,6 +105,9 @@ public class PlayerStateManager : MonoBehaviour {
 	public const int REAL_TIME_COUNTDOWN_IN_SECONDS = 600; // 10 mins
 	public const int REPLENISH_TIME_COST = 500; 
 	public const int STARTING_ENERGY = 35;
+
+    public const int MAX_SHIP_POWER = 120;
+    public int shipPowerConsumed = 110;
 	public int playerEnergy = STARTING_ENERGY;
 	public int timeElapsed = 0;
 	public ShipLocations currentLocation = ShipLocations.Cryochamber;
