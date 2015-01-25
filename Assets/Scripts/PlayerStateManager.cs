@@ -44,7 +44,7 @@ public class PlayerStateManager : MonoBehaviour {
 	}
 
 
-    public Dictionary<ShipLocations,Boolean> roomsEnabled = new Dictionary<ShipLocations, Boolean>(7);
+    public Dictionary<ShipLocations,bool> roomsEnabled = new Dictionary<ShipLocations, bool>(7);
 
     void Awake() {
         roomsEnabled.Add (ShipLocations.Barracks, true);

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DisplayDirectives : ITerminal {
+public class CLI : ITerminal {
 
     public string InitialPromptText () {
         return null;
@@ -20,7 +20,7 @@ public class DisplayDirectives : ITerminal {
             return null;
         }
         input = input.Remove (0, 1).ToLower ();
-        string[] args = input.Split (" ");
+        string[] args = input.Split (' ');
         switch (args [0]) {
         case "su":
             if (args [1] != ADMIN_PASSWORD) {
@@ -46,6 +46,6 @@ public class DisplayDirectives : ITerminal {
             }
             break;
         }
-
+        return null;
     }
 }
