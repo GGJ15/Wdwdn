@@ -58,7 +58,7 @@ public class SoundManager : MonoBehaviour {
 		switch(location){
 		case PlayerStateManager.ShipLocations.Cafeteria:
 			return clips[0];
-		case PlayerStateManager.ShipLocations.Greenhouse:
+		case PlayerStateManager.ShipLocations.Garden:
 			return clips[1];
 		case PlayerStateManager.ShipLocations.Bridge:
 			return clips[2];
