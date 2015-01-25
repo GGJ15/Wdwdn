@@ -128,4 +128,17 @@ public class GameManager : MonoBehaviour {
 		PlayerState.Tick();
 	}
 
+	public void Sleep(){
+		Player.DisableInput ();
+		blackCover.SetActive(true);
+		StartCoroutine(Wake());
+	}
+
+	IEnumerator Wake(){
+		yield return new WaitForEndOfFrame();
+		yield return new WaitForSeconds(3);
+		blackCover.SetActive(false);
+		Player.EnableInput();
+	}
+
 }
