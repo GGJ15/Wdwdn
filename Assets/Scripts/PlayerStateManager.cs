@@ -60,6 +60,7 @@ public class PlayerStateManager : MonoBehaviour {
 	public bool isAdmin = false;
 	public bool hasUnlockedBridge = false;
 	public bool hasUnlockedMedBay = false;
+	public bool hasKeyCard = false;
 
 	public int realTimeElapsedInSeconds = 0;
 	public float timeStarted = 0.0f;
