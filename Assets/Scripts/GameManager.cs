@@ -101,6 +101,7 @@ public class GameManager : MonoBehaviour {
 
 	public void UnlockBridge(){
 		PlayerState.hasUnlockedBridge = true;
+
 	}
 
 	public void UnlockMedBay(){

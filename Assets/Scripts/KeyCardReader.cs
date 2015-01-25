@@ -17,5 +17,8 @@ public class KeyCardReader : MonoBehaviour, IInteractable {
         if (PlayerStateManager.instance.hasKeyCard && PlayerStateManager.instance.isAdmin) {
             GameManager.instance.UnlockBridge ();
         }
+        else{
+
+        }
     }
 }

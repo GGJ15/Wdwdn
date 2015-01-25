@@ -14,14 +14,17 @@ public class Door : MonoBehaviour {
 
 	public bool isOpen = false;
 
-	IEnumerator Switch() {
-		yield return new WaitForSeconds(2);
-		var tmp_startMarker = startMarker;
-		startMarker = endMarker;
-		endMarker = tmp_startMarker;
-		Start ();
-		isOpen = !isOpen;
-	}
+    public void Switch(){
+        var tmp_startMarker = startMarker;
+        startMarker = endMarker;
+        endMarker = tmp_startMarker;
+        Start ();
+        isOpen = !isOpen;
+        var audio = gameObject.GetComponent<AudioSource>();
+        if(audio != null){
+            audio.Play();
+        }
+    }
 
 	void Start(){
 		startTime = Time.time;

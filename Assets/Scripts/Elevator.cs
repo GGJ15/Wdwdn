@@ -15,6 +15,10 @@ public class Elevator : MonoBehaviour {
 	private bool startedSwitch = false;
 	
 	IEnumerator Switch() {
+        var audio = gameObject.GetComponent<AudioSource>();
+        if(audio != null){
+            audio.Play();
+        }
 		yield return new WaitForSeconds(2);
 		var tmp_startMarker = startMarker;
 		startMarker = endMarker;
