@@ -45,7 +45,8 @@ public class PlayerStateManager : MonoBehaviour {
 	public enum EnergyState {
 		DYING,
 		LOW,
-		OK
+		OK,
+        SUPER_CHARGE
 	}
 
 	public const int MAX_ENERGY = 100;
@@ -84,13 +85,21 @@ public class PlayerStateManager : MonoBehaviour {
 	}
 
 	private void CheckState() {
-		if (playerEnergy < 10 && playerEnergy > 2) {
-			energyState = EnergyState.LOW;
-		} else if (playerEnergy <= 2) {
-			energyState = EnergyState.DYING;
-		} else {
-			energyState = EnergyState.OK;
-		}
+        if (energyState != EnergyState.SUPER_CHARGE) {
+            if (playerEnergy < 10 && playerEnergy > 2) {
+                energyState = EnergyState.LOW;
+            } else if (playerEnergy <= 2) {
+                energyState = EnergyState.DYING;
+            } else {
+                energyState = EnergyState.OK;
+            }
+
+            if (playerEnergy <= 0) {
+                GameManager.instance.TeleportToMedicalBay ();
+            }
+        } else {
+            playerEnergy = MAX_ENERGY;
+        }
 
 		if (timeElapsed >= MAX_TIME_ELAPSED) {
 			//ship has reached final destination?
@@ -106,6 +115,11 @@ public class PlayerStateManager : MonoBehaviour {
 		timeElapsed += (REPLENISH_TIME_COST * multiplier);
 		CheckState();
 	}
+
+    public void EnergySuperCharge() {
+        playerEnergy = MAX_ENERGY;
+        energyState = EnergyState.SUPER_CHARGE;
+    }
 
 	public void ReplenishSomeEnergy () { //Eating
 		playerEnergy += MAX_ENERGY / 3;

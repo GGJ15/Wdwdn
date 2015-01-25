@@ -38,9 +38,11 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public GameObject PlayerGameObject;
+    public Transform MedBayTeleportLocation;
 	private Transform MainCamera;
 	private Player Player;
 	private PlayerStateManager PlayerState;
+    public GameObject blackCover;
 
 	private CameraEffect currentCameraEffect = CameraEffect.Normal;
 
@@ -96,7 +98,20 @@ public class GameManager : MonoBehaviour {
 		MainCamera.GetComponent<MotionBlur>().enabled = true;
 	}
 
+    IEnumerator TeleportedToMedBay() {
+        PlayerGameObject.transform.position = MedBayTeleportLocation.transform.position;
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(3);
+        blackCover.SetActive(false);
+        PlayerState.EnergySuperCharge();
+        ResetCameraEffects();
+        Player.EnableInput();
+    }
+
 	public void TeleportToMedicalBay() {
+        Player.DisableInput();
+        blackCover.SetActive(true);
+        StartCoroutine(TeleportedToMedBay());
 	}
 
 	public void UnlockBridge(){
