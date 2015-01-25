@@ -84,6 +84,9 @@ public class PlayerStateManager : MonoBehaviour {
     
     public void DisableEnableRoom(ShipLocations location, bool status){
         roomsEnabled[location] = status;
+        if(location == ShipLocations.CommsArray){
+            commsOnline = status;
+        }
     }
 
     public int CheckPowerRequirements (ShipLocations location) {
@@ -91,6 +94,20 @@ public class PlayerStateManager : MonoBehaviour {
             return -1;
         }
         return roomsPower [location];
+    }
+
+    public string CheckDisable(ShipLocations location){
+        if (location == ShipLocations.Greenhouse) {
+            if(realTimeElapsedInSeconds<120){
+                realTimeElapsedInSeconds = 120;
+            }
+            return "Garden deactivated. Oxygen purification system is now offline.\nAuxiliary oxygen supply will be depleted in 2 minutes." ;
+        } else if (location == ShipLocations.Medical) {
+            energyState = EnergyState.LOW;
+            playerEnergy = 10;
+            return "Medical systems deactivated. Extended life support system is now offline.\nAutomatic energy regeneration is now disabled."; 
+        }
+        return null;
     }
 
 	public enum EnergyState {
@@ -116,7 +133,7 @@ public class PlayerStateManager : MonoBehaviour {
 	public bool hasUnlockedBridge = false;
 	public bool hasUnlockedMedBay = false;
 	public bool hasKeyCard = false;
-
+    public bool commsOnline = false;
 	public int realTimeElapsedInSeconds = 0;
 	public float timeStarted = 0.0f;
 
