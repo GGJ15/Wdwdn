@@ -21,8 +21,8 @@ public class LibraryCommandReference : MonoBehaviour {
 !su (password) -- This grants administrative access.
 !status (ship/sensors/room name)
  -- !status ship shows list of rooms, activation states for each.
- -- !status sensors shows cosmic background radiation status (inversely proportional to time remaining)
- -- !status (room name) shows the activation state for the room, plus a description
+ -- !status sensors shows cosmic background radiation status.
+ -- !status (room name) shows the activation state for the room, plus a description.
 
  -> ex
 
@@ -62,7 +62,7 @@ Activating… 100%
 
 Power has been allotted
 
-!activate comms -- activates communications array
+!activate / !deactivate comms -- activates/deactivates communications array
 
 !sos (message) -- only works if the comms are on, sends an emergency broadcast to anyone who can hear it
 ",
