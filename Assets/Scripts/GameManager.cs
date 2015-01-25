@@ -46,6 +46,8 @@ public class GameManager : MonoBehaviour {
 
 	private CameraEffect currentCameraEffect = CameraEffect.Normal;
 
+    public bool win = false;
+    public bool loss = false;
 	
 	void Start() {
 		Player = PlayerGameObject.GetComponent<Player>();
@@ -144,11 +146,11 @@ public class GameManager : MonoBehaviour {
 	}
 
     public void PlayDeathScene(){
-
+        loss = true;
     }
 
     public void PlayWinScene(){
-
+        win = true;
     }
 
 }
