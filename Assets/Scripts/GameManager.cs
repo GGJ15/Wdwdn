@@ -77,6 +77,7 @@ public class GameManager : MonoBehaviour {
 	public void EnablePlayerInput(){
 		Screen.lockCursor = true;
 		Player.EnableInput();
+        StartCoroutine(LockCursor());
 	}
 
 	public void SetCameraDizzyEffect() {
@@ -145,12 +146,28 @@ public class GameManager : MonoBehaviour {
 		Player.EnableInput();
 	}
 
-    public void PlayDeathScene(){
+    IEnumerator LockCursor(){
+        yield return new WaitForEndOfFrame();
+        Screen.lockCursor = true;
+    }
+
+    IEnumerator Win(){
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(8);
+        win = true;
+    }
+
+    IEnumerator Loss(){
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(1);
         loss = true;
+    }
+    public void PlayDeathScene(){
+        StartCoroutine(Loss ());
     }
 
     public void PlayWinScene(){
-        win = true;
+        StartCoroutine(Win ());
     }
 
 }

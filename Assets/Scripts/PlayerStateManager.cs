@@ -150,11 +150,15 @@ public class PlayerStateManager : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		if (hasUnlockedBridge) {
+        if (hasUnlockedBridge && isGoingToDie) {
 			if (timeStarted == 0.0f) {
 				timeStarted = Time.fixedTime;
 			}
 			realTimeElapsedInSeconds = (int)(Time.fixedTime - timeStarted);
+            if(realTimeElapsedInSeconds>= REAL_TIME_COUNTDOWN_IN_SECONDS){
+                GameManager.instance.PlayDeathScene();
+                isGoingToDie = false;
+            }
 		}
 	}
 

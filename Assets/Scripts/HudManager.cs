@@ -14,22 +14,24 @@ public class HudManager : MonoBehaviour
 
 		// Update is called once per frame
 		void FixedUpdate () {
-			textToUpdate.text = PlayerStateManager.instance.playerEnergy + "/" + PlayerStateManager.MAX_ENERGY;
-			if (PlayerStateManager.instance.hasUnlockedBridge) {
-				countDownText.gameObject.SetActive(true);
-				var timeInSeconds = PlayerStateManager.REAL_TIME_COUNTDOWN_IN_SECONDS - PlayerStateManager.instance.realTimeElapsedInSeconds;
-				var minutesString = Mathf.FloorToInt((timeInSeconds / 60)).ToString("00");
-			var secondsString = Mathf.FloorToInt(timeInSeconds % 60).ToString("00");
+        textToUpdate.text = PlayerStateManager.instance.playerEnergy + "/" + PlayerStateManager.MAX_ENERGY;
+        if (PlayerStateManager.instance.hasUnlockedBridge && PlayerStateManager.instance.isGoingToDie) {
+            countDownText.gameObject.SetActive (true);
+            var timeInSeconds = PlayerStateManager.REAL_TIME_COUNTDOWN_IN_SECONDS - PlayerStateManager.instance.realTimeElapsedInSeconds;
+            var minutesString = Mathf.FloorToInt ((timeInSeconds / 60)).ToString ("00");
+            var secondsString = Mathf.FloorToInt (timeInSeconds % 60).ToString ("00");
 
             countDownText.text = minutesString + ":" + secondsString;
 
-            if(GameManager.instance.win){
-                endpanel.SetActive(true);
-                win.SetActive(true);
+            if (GameManager.instance.win) {
+                countDownText.gameObject.SetActive (false);
+                endpanel.SetActive (true);
+                win.SetActive (true);
             }
-            if(GameManager.instance.loss){
-                endpanel.SetActive(true);
-                loss.SetActive(true);
+            if (GameManager.instance.loss) {
+                countDownText.gameObject.SetActive (false);
+                endpanel.SetActive (true);
+                loss.SetActive (true);
             }
         }
         if (PlayerStateManager.instance.energyState == PlayerStateManager.EnergyState.LOW || PlayerStateManager.instance.energyState == PlayerStateManager.EnergyState.DYING) {

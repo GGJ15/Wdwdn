@@ -6,14 +6,14 @@ public class MainTerminal : MonoBehaviour, ITerminal {
 	private ITerminal[] interfaces = new ITerminal[]{ new DisplayDirectives(), new CLI() };
 	
 	void FixedUpdate() {
-		if (Input.GetKeyDown ("escape") || PlayerStateManager.instance.playerEnergy <= 0) {
+        if (Input.GetKeyDown ("escape") || PlayerStateManager.instance.playerEnergy <= 0 || GameManager.instance.win || GameManager.instance.loss) {
 			gameObject.GetComponent<TerminalManager>().Hide_();
 			GameManager.instance.EnablePlayerInput();
 		}
 	}
 
-	void OnEnable(){
-		gameObject.GetComponent<TerminalManager>().Show_();
+    void OnEnable(){
+        gameObject.GetComponent<TerminalManager>().Show_();
 		GameManager.instance.DisablePlayerInput();
 	}
 
