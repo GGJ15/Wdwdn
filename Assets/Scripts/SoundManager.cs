@@ -42,7 +42,7 @@ public class SoundManager : MonoBehaviour {
 			source2.volume = 0;
 			source2.Play();
 			source2.loop = true;
-			StartCoroutine(Crossfade(source1,source2,2f));
+			StartCoroutine(Crossfade(source1,source2,2.5f));
 			var sourceTemp = source2;
 			source2 = source1;
 			source1 = sourceTemp;
