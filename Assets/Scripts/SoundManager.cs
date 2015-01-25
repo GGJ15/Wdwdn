@@ -35,6 +35,8 @@ public class SoundManager : MonoBehaviour {
 	public AudioSource source2;
 
 	public AudioSource footstepSource;
+    public AudioSource terminalOn;
+    public AudioSource terminalOff;
 
 	
 	public PlayerStateManager.ShipLocations lastPlayedBgmForLocation = PlayerStateManager.ShipLocations.Unknown;
@@ -82,8 +84,8 @@ public class SoundManager : MonoBehaviour {
 			
 			var i = (Time.time - startTime) / duration;
 			
-			a1.volume = (1-i) * 0.6f;
-			a2.volume = i * 0.6f;
+			a1.volume = (1-i) * 0.5f;
+			a2.volume = i * 0.5f;
 			
 			yield return null;
 			
@@ -100,4 +102,12 @@ public class SoundManager : MonoBehaviour {
 		footstepSource.Stop();
 	}
 	
+    public void TerminalOn(){
+        terminalOn.Play();
+    }
+
+    
+    public void TerminalOff(){
+        terminalOff.Play();
+    }
 }

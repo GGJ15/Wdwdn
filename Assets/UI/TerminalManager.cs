@@ -19,10 +19,12 @@ public class TerminalManager : MonoBehaviour {
 	public void Show_() {
 		gameObject.SetActive(true);
 		terminalInput.GetComponent<TerminalInput>().On_Show();
+        SoundManager.instance.TerminalOn();
 	}
 
 	public void Hide_() {
 		gameObject.SetActive(false);
 		terminalInput.GetComponent<TerminalInput>().On_Hide();
+        SoundManager.instance.TerminalOff();
 	}
 }
