@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerStateManager : MonoBehaviour {
 
@@ -41,6 +42,24 @@ public class PlayerStateManager : MonoBehaviour {
 		Corridors,
 		Unknown
 	}
+
+
+    public Dictionary<ShipLocations,Boolean> roomsEnabled = new Dictionary<ShipLocations, Boolean>(7);
+
+    void Awake() {
+        roomsEnabled.Add (ShipLocations.Barracks, true);
+        roomsEnabled.Add (ShipLocations.Bridge, false);
+        roomsEnabled.Add (ShipLocations.Cafeteria, true);
+        roomsEnabled.Add (ShipLocations.Corridors, true);
+        roomsEnabled.Add (ShipLocations.Cryochamber, true);
+        roomsEnabled.Add (ShipLocations.Greenhouse, true);
+        roomsEnabled.Add (ShipLocations.Library, true);
+        roomsEnabled.Add (ShipLocations.Medical, false);
+    }
+
+    public void DisableEnableRoom(ShipLocations location, bool status){
+        roomsEnabled[location] = status;
+    }
 
 	public enum EnergyState {
 		DYING,
