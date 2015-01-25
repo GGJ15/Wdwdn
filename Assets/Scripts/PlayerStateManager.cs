@@ -48,12 +48,12 @@ public class PlayerStateManager : MonoBehaviour {
 		OK
 	}
 
-	const int MAX_ENERGY = 200;
+	public const int MAX_ENERGY = 100;
 	const int MAX_TIME_ELAPSED = 3000;
 	const int REPLENISH_TIME_COST = 500; 
-
-	private int playerEnergy = MAX_ENERGY;
-	private int timeElapsed = 0;
+	const int STARTING_ENERGY = 25;
+	public int playerEnergy = STARTING_ENERGY;
+	public int timeElapsed = 0;
 	public ShipLocations currentLocation = ShipLocations.Cryochamber;
 	public EnergyState energyState = EnergyState.OK;
 	public bool isAdmin = false;
@@ -61,13 +61,16 @@ public class PlayerStateManager : MonoBehaviour {
 	public void Tick () {
 		timeElapsed++;
 		playerEnergy--;
+		if(playerEnergy < 0){
+			playerEnergy = 0;
+		}
 		CheckState();
 	}
 
 	private void CheckState() {
-		if (playerEnergy < 25 && playerEnergy > 0) {
+		if (playerEnergy < 10 && playerEnergy > 2) {
 			energyState = EnergyState.LOW;
-		} else if (playerEnergy <= 0) {
+		} else if (playerEnergy <= 2) {
 			energyState = EnergyState.DYING;
 		} else {
 			energyState = EnergyState.OK;

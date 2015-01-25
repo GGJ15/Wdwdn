@@ -4,6 +4,16 @@ using UnityEngine.UI;
 
 public class LibraryArchive : MonoBehaviour {
 
+	void FixedUpdate() {
+		if (Input.GetKeyDown ("escape")) {
+			gameObject.SetActive(false);
+			GameManager.instance.EnablePlayerInput();
+		}
+	}
+	
+	void OnEnable(){
+		GameManager.instance.DisablePlayerInput();
+	}
 
 	private string[] pages = new string[]{
 		@"!!! NOT ENOUGH POWER TO DISPLAY FULL INTERFACE !!!
@@ -74,17 +84,21 @@ In the year 2086, March 1, the HMS King Solomon departs on its maiden voyage as 
 		currentPage++;
 		if (currentPage > (pages.Length-1)) {
 			currentPage = pages.Length -1;
+			return;
 		} else {
 			outputText.text = pages[currentPage];
 		}
+		GameManager.instance.Tick();
 	}
 
 	public void PaginateBackward() {
 		currentPage--;
 		if (currentPage < 0) {
 			currentPage = 0;
+			return;
 		} else {
 			outputText.text = pages[currentPage];
 		}
+		GameManager.instance.Tick();
 	}
 }
