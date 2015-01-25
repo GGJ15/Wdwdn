@@ -36,7 +36,7 @@ public class Player : MonoBehaviour {
 			}
 			if(directionLength == 1){
 				framesSinceLastTick++;
-				if(framesSinceLastTick > 100){
+				if(framesSinceLastTick > 150){
 					framesSinceLastTick = 0;
 					GameManager.instance.Tick();
 				}

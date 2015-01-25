@@ -12,7 +12,7 @@ public class Door : MonoBehaviour {
 	public float smooth = 5.0F;
 
 
-	private bool startedSwitch = false;
+	public bool isOpen = false;
 
 	IEnumerator Switch() {
 		yield return new WaitForSeconds(2);
@@ -20,7 +20,7 @@ public class Door : MonoBehaviour {
 		startMarker = endMarker;
 		endMarker = tmp_startMarker;
 		Start ();
-		startedSwitch = false;
+		isOpen = !isOpen;
 	}
 
 	void Start(){

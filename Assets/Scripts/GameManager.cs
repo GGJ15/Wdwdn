@@ -99,6 +99,13 @@ public class GameManager : MonoBehaviour {
 	public void TeleportToMedicalBay() {
 	}
 
+	public void UnlockBridge(){
+		PlayerState.hasUnlockedBridge = true;
+	}
+
+	public void UnlockMedBay(){
+		PlayerState.hasUnlockedMedBay = true;
+	}
 
 	public void Tick() {
 		Debug.Log ("Tick!");
